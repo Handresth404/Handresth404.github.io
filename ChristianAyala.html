@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portafolio de Christian Ayala, estudiante de Ingeniería en Ciencias de la Computación en la Escuela Politécnica Nacional. Proyectos, experiencia y habilidades.">
+<meta name="theme-color" content="#193449">
+<meta name="color-scheme" content="light dark">
+<title>Christian Ayala | Portafolio</title>
+<script>if(!matchMedia("(prefers-reduced-motion:reduce)").matches)document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+<div class="bar" id="bar" aria-hidden="true"></div>
+
+<header class="hd">
+ <div class="hbar">
+  <a class="logo" href="#inicio" aria-label="Christian Ayala, ir al inicio">christian<i>ayala.</i></a>
+  <nav class="nav" id="nav" aria-label="Navegación principal">
+   <a href="#inicio" class="on">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Trabajos</a><a href="#experiencia">Experiencia</a><a href="#habilidades">Habilidades</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a>
+  </nav>
+  <button id="th" class="ib th" type="button" aria-label="Cambiar a tema oscuro"><span id="ti" aria-hidden="true">☾</span></button>
+  <button id="mb" class="ib mb" type="button" aria-label="Abrir menú de navegación" aria-controls="nav" aria-expanded="false"><span id="mi" aria-hidden="true">☰</span></button>
+ </div>
+</header>
+
+<main id="contenido">
+<section id="inicio" class="hero" aria-labelledby="ht">
+ <div class="wrap hg">
+  <div>
+   <span class="chip rv">Bienvenido a mi portafolio</span>
+   <h1 id="ht">Christian <span class="l2">Ayala.</span></h1>
+   <p class="lead rv" style="--rd:.7s">Tecnología para resolver problemas reales.</p>
+   <p class="tw rv" style="--rd:.8s">Me interesa <b>crear soluciones que aporten valor.</b></p>
+   <p class="cp rv" style="--rd:.9s">Estudiante de Ingeniería en Ciencias de la Computación en la Escuela Politécnica Nacional. Me interesan el desarrollo de software, las bases de datos, las redes y la seguridad informática.</p>
+   <div class="btns rv" style="--rd:1s"><a class="btn by" href="#proyectos">Explorar trabajos ↗</a><a class="btn bw" href="#contacto">Contactarme →</a></div>
+  </div>
+  <div class="pt">
+   <div class="epn"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 12v5c3.8 3 8.2 3 12 0v-5M22 9v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Escuela Politécnica Nacional</div>
+   <div class="arch rv" style="--rd:.4s"><img src="assets/foto-christian.jpg" alt="Retrato de Christian Ayala" decoding="async" width="900" height="1125"></div>
+   <svg class="seal" viewBox="0 0 124 124" aria-hidden="true"><defs><path id="cp" d="M62 62m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs><circle cx="62" cy="62" r="60" fill="#FF5C7A" stroke="#0A0F2C" stroke-width="2.5"/><text><textPath href="#cp" textLength="268" lengthAdjust="spacing">SOFTWARE ✦ DATOS ✦ REDES ✦ SEGURIDAD ✦</textPath></text><text x="62" y="71" text-anchor="middle" style="font-size:24px;letter-spacing:0">CA</text></svg>
+  </div>
+ </div>
+</section>
+
+<div class="band" aria-label="Áreas de interés">
+ <div class="band-inner">
+  <span>Desarrollo de software ✦</span>
+  <span>Bases de datos ✦</span>
+  <span>Redes y seguridad ✦</span>
+  <span>IA aplicada ✦</span>
+  <span>Inclusión digital</span>
+ </div>
+</div>
+
+<section id="sobre-mi" class="sec" aria-labelledby="at">
+ <div class="wrap">
+  <div class="sh"><h2 id="at">Más allá del código.</h2></div>
+  <div class="ag">
+   <p class="st">Me motiva entender cómo funcionan las cosas y convertir ese conocimiento en soluciones útiles, accesibles y claras.</p>
+   <div class="ab">
+    <p>Mi formación combina programación, sistemas operativos, gestión de bases de datos y fundamentos de redes y ciberseguridad. También he trabajado en capacitación digital y soporte tecnológico.</p>
+    <p>Valoro el trabajo en equipo, el pensamiento lógico, la comunicación y el aprendizaje continuo. Busco seguir fortaleciendo mis habilidades mediante desafíos prácticos.</p>
+    <a href="#experiencia" class="lk">Conoce mi experiencia ↗</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="proyectos" class="sec" aria-labelledby="pt2">
+ <div class="wrap">
+  <div class="sh"><h2 id="pt2">Experiencia en acción.</h2><p>Una selección de actividades técnicas y educativas que forman parte de mi experiencia.</p></div>
+  <div class="tb">
+   <div class="fl" role="group" aria-label="Filtrar trabajos por área">
+    <button type="button" class="fb" data-f="todos" aria-pressed="true">Todos</button><button type="button" class="fb" data-f="ia" aria-pressed="false">IA</button><button type="button" class="fb" data-f="datos" aria-pressed="false">Datos</button><button type="button" class="fb" data-f="social" aria-pressed="false">Educación</button>
+   </div>
+   <div class="sw"><label class="sr" for="q">Buscar trabajos</label><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7.4"/><path d="m16.5 16.5 5 5"/></svg><input type="search" id="q" placeholder="Buscar un trabajo..." autocomplete="off" maxlength="80"></div>
+  </div>
+  <div class="rb"><span id="rc" role="status" aria-live="polite">Mostrando 3 trabajos</span><button id="rs" class="rs" type="button" hidden>Limpiar filtros</button></div>
+  <div class="pg" id="pg">
+   <article class="card pc" style="--g:#7C8CFF" data-c="ia" data-k="inteligencia artificial ia procesamiento imagenes segmentacion semantica modelo objetos entrenamiento preprocesamiento">
+    <div class="art" aria-hidden="true"><svg viewBox="0 0 300 160" fill="none"><rect x="43" y="12" width="212" height="138" rx="14" fill="#243C5A" stroke="#86B8F1" stroke-opacity=".45"/><path d="M65 36h53M65 45h32" stroke="#93B3D8" stroke-width="5" stroke-linecap="round"/><rect x="66" y="65" width="45" height="61" rx="5" fill="#78A6DC"/><path d="M72 113 89 90l16 21" stroke="#E9F3FF" stroke-width="3"/><rect x="120" y="65" width="45" height="61" rx="5" fill="#9BD17A"/><path d="m125 110 13-24 21 10v21h-34z" fill="#A99BFF"/><rect x="174" y="65" width="60" height="61" rx="5" fill="#314D73"/><path d="M178 93h16v-20h17v16h16v30h-49z" fill="#B5C9F1"/><path d="M179 108h10v-9h18v-9h20" stroke="#A99BFF" stroke-width="2"/><circle cx="252" cy="32" r="11" fill="#A99BFF"/><path d="m248 32 3 3 5-6" stroke="#15243A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="pb"><span class="tag">IA · Procesamiento de imágenes</span><h3>Segmentación semántica</h3><p>Creación y entrenamiento de un modelo para identificar objetos en imágenes mediante segmentación semántica.</p><div class="tc"><span>Visión por computadora</span><span>Preprocesamiento</span></div><button class="po" type="button" data-p="segmentacion" aria-haspopup="dialog">Ver detalles ↗</button></div>
+   </article>
+   <article class="card pc" style="--g:#5EE6B0" data-c="datos" data-k="bases datos sql mysql mongodb modelado logico fisico consultas estructuras almacenamiento">
+    <div class="art" aria-hidden="true"><svg viewBox="0 0 300 160" fill="none"><ellipse cx="150" cy="31" rx="70" ry="19" fill="#436E67" stroke="#ACD7B5" stroke-width="2"/><path d="M80 31v83c0 11 31 20 70 20s70-9 70-20V31" fill="#1B3C43" stroke="#88B8A5" stroke-width="2"/><path d="M80 57c0 11 31 20 70 20s70-9 70-20M80 85c0 11 31 20 70 20s70-9 70-20" stroke="#81B9A2" stroke-width="2" stroke-dasharray="5 5"/><ellipse cx="150" cy="31" rx="70" ry="19" fill="#2E5E56" stroke="#AFE7BA" stroke-width="2"/><ellipse cx="150" cy="31" rx="34" ry="7" fill="#A99BFF" opacity=".65"/><rect x="199" y="98" width="67" height="38" rx="8" fill="#A99BFF"/><path d="m215 110-7 7 7 7m27-14 7 7-7 7m-7-17-7 20" stroke="#1A362B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+    <div class="pb"><span class="tag">Datos · EPN</span><h3>Diseño y manejo de bases de datos</h3><p>Modelado lógico y físico, consultas SQL y organización de estructuras para almacenar información eficientemente.</p><div class="tc"><span>SQL</span><span>Modelado de datos</span></div><button class="po" type="button" data-p="bases" aria-haspopup="dialog">Ver detalles ↗</button></div>
+   </article>
+   <article class="card pc" style="--g:#FF8FA3" data-c="social" data-k="ludolab instructor proyecto inclusion digital epn capacitacion tecnologia educacion personas vulnerables brecha digital">
+    <div class="art" aria-hidden="true"><svg viewBox="0 0 300 160" fill="none"><rect x="51" y="22" width="197" height="116" rx="10" fill="#2C335F" stroke="#988EF0" stroke-width="2"/><path d="M51 49h197" stroke="#988EF0" stroke-width="2"/><circle cx="68" cy="36" r="4" fill="#A99BFF"/><circle cx="83" cy="36" r="4" fill="#B7A6ED"/><circle cx="98" cy="36" r="4" fill="#B7A6ED"/><circle cx="112" cy="75" r="20" stroke="#D1C5FD" stroke-width="3"/><path d="M82 119c0-21 12-32 30-32s30 11 30 32" fill="#9C8BEA"/><circle cx="173" cy="76" r="17" fill="#A99BFF"/><path d="M147 115c0-18 10-27 26-27s26 9 26 27" fill="#A99BFF"/><path d="M219 71h17M219 82h12M219 94h17" stroke="#D1C5FD" stroke-width="3" stroke-linecap="round"/></svg></div>
+    <div class="pb"><span class="tag">Educación · LudoLab</span><h3>Inclusión digital</h3><p>Capacitación en herramientas tecnológicas a grupos en situación de vulnerabilidad para reducir la brecha digital.</p><div class="tc"><span>Enseñanza</span><span>Herramientas digitales</span></div><button class="po" type="button" data-p="ludolab" aria-haspopup="dialog">Ver detalles ↗</button></div>
+   </article>
+  </div>
+  <div id="es" class="es" hidden><strong>No encontramos trabajos con esos criterios.</strong><p>Prueba otra palabra o vuelve a mostrar todos los trabajos.</p><button id="er" class="btn by" type="button">Mostrar todos</button></div>
+ </div>
+</section>
+
+<section id="experiencia" class="sec" aria-labelledby="xt">
+ <div class="wrap">
+  <div class="sh"><h2 id="xt">Mi experiencia.</h2><p>Experiencias que me han permitido aplicar conocimientos y colaborar con otras personas.</p></div>
+  <ol class="tl">
+   <li class="tr"><div class="dt">Feb. 2025 – Actualidad</div><div><h3>Soporte y gestión digital</h3><div class="org">CarAuto</div></div><p>Supervisión de comprobantes electrónicos, gestión de bases de datos de clientes e inventario y asistencia técnica en el proceso de ventas.</p></li>
+   <li class="tr"><div class="dt">Ene. – Jul. 2025</div><div><h3>Instructor de inclusión digital</h3><div class="org">LudoLab · EPN</div></div><p>Capacitación sobre herramientas tecnológicas esenciales para grupos en situación de vulnerabilidad, con énfasis en reducir la brecha digital.</p></li>
+   <li class="tr"><div class="dt">2025</div><div><h3>Creación y manejo de bases de datos</h3><div class="org">EPN</div></div><p>Diseño lógico y físico, consultas SQL y optimización de estructuras de almacenamiento.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section id="habilidades" class="sec" aria-labelledby="kt">
+ <div class="wrap">
+  <div class="sh"><h2 id="kt">Lo que sé utilizar.</h2><p>Conocimientos que sigo desarrollando a través de proyectos, estudios y práctica.</p></div>
+  <div class="bento">
+   <article class="card sk s4 cb"><div class="gl" aria-hidden="true">⌘</div><h3>Programación y desarrollo</h3><p>Lenguajes y tecnologías para crear soluciones de software.</p><div class="pl"><span>Python</span><span>C++</span><span>Java</span><span>FastAPI</span><span>Ollama</span></div></article>
+   <article class="card sk s2 cy"><div class="gl" aria-hidden="true">▤</div><h3>Bases de datos</h3><p>Modelado, consultas y fundamentos de almacenamiento de información.</p><div class="pl"><span>SQL</span><span>MySQL</span><span>MongoDB</span><span>Modelado de datos</span></div></article>
+   <article class="card sk s2"><div class="gl" aria-hidden="true">⌁</div><h3>Sistemas y redes</h3><p>Instalación de sistemas, mantenimiento, respaldos y fundamentos de redes y seguridad.</p><div class="pl"><span>Sistemas operativos</span><span>Soporte técnico</span><span>Redes</span></div></article>
+   <article class="card sk s2 cr"><div class="gl" aria-hidden="true">◉</div><h3>IA aplicada</h3><p>Segmentación semántica, entrenamiento de modelos y procesamiento de imágenes.</p><div class="pl"><span>Visión por computadora</span><span>Preprocesamiento</span></div></article>
+   <article class="card sk s2"><div class="gl" aria-hidden="true">▦</div><h3>Herramientas de oficina</h3><p>Documentación de proyectos, análisis básico de datos y gestión de archivos.</p><div class="pl"><span>Microsoft 365</span><span>Excel</span><span>Nube</span></div></article>
+   <article class="card sk s6"><div class="gl" aria-hidden="true">✦</div><h3>Habilidades humanas</h3><p>Trabajo en equipo, resolución de problemas, aprendizaje autónomo y comunicación técnica.</p><div class="pl"><span>Adaptabilidad</span><span>Proactividad</span><span>Responsabilidad</span></div></article>
+  </div>
+ </div>
+</section>
+
+<section id="formacion" class="sec" aria-labelledby="et">
+ <div class="wrap">
+  <div class="sh"><h2 id="et">Formación y cursos.</h2></div>
+  <div class="eg">
+   <div>
+    <div class="card ec"><small>Educación superior · En curso</small><h3>Escuela Politécnica Nacional</h3><p>Ingeniería en Ciencias de la Computación.</p></div>
+    <div class="card ec"><small>Bachillerato</small><h3>Colegio San Francisco de Quito</h3><p>Bachiller en Ciencias.</p></div>
+   </div>
+   <div>
+    <h4>Certificaciones y formación complementaria</h4>
+    <ul class="cl">
+     <li>Fundamentos de Python 1<small>Cisco Networking Academy</small></li>
+     <li>Getting Started with Cisco Packet Tracer<small>Cisco Networking Academy</small></li>
+     <li>MATLAB Fundamentals &amp; Onramp<small>MathWorks</small></li>
+     <li>Advanced Two · Inglés, ciclo 4 (2024)<small>CEC · EPN</small></li>
+     <li>Administración efectiva del tiempo<small>Formación autodidacta</small></li>
+     <li>Asistente ICI2ST 2022<small>III International Conference on Information Systems and Software Technologies · EPN</small></li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contacto" class="sec" aria-labelledby="ct">
+ <div class="wrap">
+  <div class="ct">
+   <div>
+    <h3 id="ct">Contacto. Ingeniería en Ciencias de la Computación.</h3>
+    <p>Para proyectos, consultas u oportunidades profesionales, puedes comunicarte conmigo por estos medios.</p>
+   </div>
+   <div class="cm">
+    <a class="cx p" href="https://wa.me/593995593657?text=Hola%2C%20Christian.%20Vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer" aria-label="Escribir al número 099 559 3657 por WhatsApp"><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 11.9a8.2 8.2 0 0 1-12 7.2L4 20l.95-4A8.2 8.2 0 1 1 20.2 12Z"/><path d="M9 8.5c-.3-.5-.6-.5-.9-.5s-.6.2-.8.6c-.4.6-.3 1.3.2 2.4 1.1 2.1 2.8 3.4 4.9 4 .7.2 1.3.1 1.8-.4l.7-.9-1.9-1-1 1c-1-.5-2.2-1.5-2.7-2.6l.8-.9-1.1-1.7Z"/></svg></span><span><small>WhatsApp</small><strong>099 559 3657</strong></span><span class="ar" aria-hidden="true">↗</span></a>
+    <a class="cx" href="mailto:christianayala2828@hotmail.com" aria-label="Enviar correo a christianayala2828@hotmail.com"><span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span><span><small>Correo electrónico</small><strong>christianayala2828@<wbr>hotmail.com</strong></span><span class="ar" aria-hidden="true">↗</span></a>
+    <a class="cx" href="https://www.linkedin.com/in/christian-ayala28" target="_blank" rel="noopener noreferrer" aria-label="Visitar el LinkedIn de Christian Ayala"><span class="ci" aria-hidden="true">in</span><span><small>LinkedIn</small><strong>christian-ayala28</strong></span><span class="ar" aria-hidden="true">↗</span></a>
+   </div>
+   <span class="mono" aria-hidden="true">CA</span>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="ft"><div class="wrap fi"><span><strong>Christian Ayala</strong> · Portafolio personal</span><a href="#inicio">Volver al inicio ↑</a></div></footer>
+
+<dialog id="dlg" class="dlg" aria-labelledby="dt2" aria-describedby="dd">
+ <div class="di">
+  <div class="dh"><div><span class="dl">Más sobre este trabajo</span><h2 id="dt2"></h2></div><form method="dialog"><button class="ib" type="submit" aria-label="Cerrar detalles">×</button></form></div>
+  <p id="dd" style="color:var(--sub);margin:0 0 18px"></p>
+  <span class="dl">¿Qué hice?</span>
+  <ul id="dp"></ul>
+ </div>
+</dialog>
+
+<script defer src="js/main.js"></script>
+</body>
+</html>
