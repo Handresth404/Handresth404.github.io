@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Ayala — Portafolio Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Indicador sutil de lectura -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navegación limpia y espaciada -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a href="#inicio" class="brand" title="Ir al inicio">
+                <span class="brand-mark">CA</span>
+                <span class="brand-name">Christian Ayala</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#soluciones" class="nav-link">Soluciones y Habilidades</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#formacion" class="nav-link">Formación</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" title="Cambiar entre modo claro y oscuro" aria-label="Cambiar apariencia">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://wa.me/593995593657?text=Hola%20Christian%2C%20revis%C3%A9%20tu%20portafolio%20profesional%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-whatsapp btn-sm">
+                    <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SECCIÓN HERO: AMPLIA Y EJECUTIVA -->
+        <section id="inicio" class="hero-section">
+            <div class="container hero-layout">
+                
+                <div class="hero-copy reveal">
+                    <div class="location-tag">
+                        <span class="status-dot"></span>
+                        <span>Escuela Politécnica Nacional · Quito, Ecuador</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Soluciones tecnológicas en <br>
+                        <span class="animated-gradient" id="rotating-text">Desarrollo de Software</span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        Soy <strong>Christian Ayala</strong>, formado en Ingeniería en Ciencias de la Computación en la <strong>EPN</strong>. Ayudo a organizaciones y proyectos a gestionar su información, optimizar procesos digitales, asegurar su infraestructura de red e implementar soluciones de software confiables.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="https://wa.me/593995593657?text=Hola%20Christian%2C%20revis%C3%A9%20tu%20portafolio%20profesional%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                        </a>
+                        <a href="mailto:christianayala2828@hotmail.com?subject=Contacto%20Profesional%20-%20Christian%20Ayala&body=Hola%20Christian%2C%20revis%C3%A9%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar%20contigo." 
+                           class="btn btn-dark">
+                            <i class="far fa-envelope"></i> Enviar Correo
+                        </a>
+                        <button type="button" id="btn-copy-phone" class="btn btn-ghost" title="Copiar número de teléfono">
+                            <i class="fas fa-phone-alt"></i> 0995593657
+                        </button>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/christian-ayala28" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <span class="divider">·</span>
+                        <a href="https://kurereishu.github.io/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> Portafolio GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Fotografía con marco limpio -->
+                <div class="hero-photo-col reveal">
+                    <div class="portrait-card">
+                        <img src="assets/foto-christian.jpg" alt="Christian Ayala" id="profile-img" class="portrait-img">
+                        <div id="profile-fallback" class="portrait-fallback" style="display: none;">
+                            <span class="fallback-initials">CA</span>
+                            <p>Coloca <code>foto-christian.jpg</code> en la carpeta <code>assets/</code> o selecciónala aquí:</p>
+                            <label for="photo-upload" class="btn btn-ghost btn-sm">Cargar foto</label>
+                            <input type="file" id="photo-upload" accept="image/*" hidden>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN SOLUCIONES Y HABILIDADES (ORIENTADA A CLIENTES) -->
+        <section id="soluciones" class="section section-alt">
+            <div class="container">
+                
+                <div class="section-header reveal">
+                    <div>
+                        <span class="kicker">Áreas de Especialidad</span>
+                        <h2 class="section-title">¿Cómo puedo aportar valor a tu proyecto?</h2>
+                        <p class="section-subtitle">Tecnología aplicada de forma clara, segura y orientada a resultados prácticos.</p>
+                    </div>
+
+                    <!-- Filtro limpio y espaciado -->
+                    <div class="filter-pills" role="tablist" aria-label="Filtrar áreas">
+                        <button class="filter-btn active" data-filter="all">Todas las áreas</button>
+                        <button class="filter-btn" data-filter="software">Software e IA</button>
+                        <button class="filter-btn" data-filter="datos">Datos y Gestión</button>
+                        <button class="filter-btn" data-filter="infraestructura">Sistemas y Redes</button>
+                    </div>
+                </div>
+
+                <div class="cards-grid-2">
+                    
+                    <!-- Tarjeta 1 -->
+                    <article class="clean-card skill-item software reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Desarrollo de Software y Automatización</h3>
+                        <p>
+                            Creación de aplicaciones rápidas, servicios web e integración de herramientas de inteligencia artificial para automatizar tareas, analizar imágenes y optimizar procesos operativos.
+                        </p>
+                        <div class="clean-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Java</span>
+                            <span>C++</span>
+                            <span>Inteligencia Artificial</span>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="clean-card skill-item datos reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Bases de Datos y Control de Información</h3>
+                        <p>
+                            Diseño y organización de bases de datos seguras para el control eficiente de clientes, inventarios y facturación, garantizando que la información esté siempre disponible e íntegra.
+                        </p>
+                        <div class="clean-tags">
+                            <span>SQL / MySQL</span>
+                            <span>MongoDB</span>
+                            <span>Modelado de Datos</span>
+                            <span>Excel & Análisis</span>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="clean-card skill-item infraestructura reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3>Soporte de Sistemas, Redes y Seguridad</h3>
+                        <p>
+                            Mantenimiento preventivo y correctivo de equipos, configuración de sistemas operativos, copias de respaldo (backups) y análisis de redes para mantener la continuidad del negocio.
+                        </p>
+                        <div class="clean-tags">
+                            <span>Soporte Técnico</span>
+                            <span>Redes y Seguridad</span>
+                            <span>Gestión de Backups</span>
+                            <span>Sistemas Operativos</span>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 4 -->
+                    <article class="clean-card skill-item datos reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Gestión Digital y Herramientas Corporativas</h3>
+                        <p>
+                            Administración de documentación de proyectos en la nube, supervisión de comprobantes electrónicos, capacitación tecnológica a equipos de trabajo y edición multimedia.
+                        </p>
+                        <div class="clean-tags">
+                            <span>Microsoft 365</span>
+                            <span>Gestión en la Nube</span>
+                            <span>MATLAB</span>
+                            <span>Edición Audio/Video</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Valores y Aptitudes Profesionales -->
+                <div class="values-strip reveal">
+                    <span class="values-label">Compromiso profesional:</span>
+                    <div class="values-items">
+                        <span><i class="fas fa-check"></i> Resolución ágil de problemas</span>
+                        <span><i class="fas fa-check"></i> Comunicación clara</span>
+                        <span><i class="fas fa-check"></i> Trabajo en equipo</span>
+                        <span><i class="fas fa-check"></i> Adaptabilidad tecnológica</span>
+                        <span><i class="fas fa-check"></i> Cumplimiento de objetivos</span>
+                        <span><i class="fas fa-id-card"></i> Licencia de conducir</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN EXPERIENCIA PROFESIONAL (DISEÑO EDITORIAL ESPACIADO) -->
+        <section id="experiencia" class="section">
+            <div class="container">
+                
+                <div class="section-header reveal">
+                    <div>
+                        <span class="kicker">Trayectoria</span>
+                        <h2 class="section-title">Experiencia Profesional y Proyectos</h2>
+                        <p class="section-subtitle">Resultados comprobados en gestión comercial, academia y desarrollo técnico.</p>
+                    </div>
+                </div>
+
+                <div class="experience-list">
+                    
+                    <!-- Experiencia 1 -->
+                    <article class="exp-row reveal">
+                        <div class="exp-meta">
+                            <span class="exp-period">Feb 2025 – Actualidad</span>
+                            <span class="exp-org">CarAuto</span>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Soporte y Gestión Digital</h3>
+                            <p>
+                                Supervisión continua de la emisión de comprobantes electrónicos y administración de la base de datos de clientes e inventario. Responsable de resguardar la integridad de los registros financieros y brindar asistencia técnica directa en el flujo de ventas.
+                            </p>
+                            <button class="btn-text open-modal" data-modal="modal-carauto">
+                                Ver responsabilidades clave <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Experiencia 2 -->
+                    <article class="exp-row reveal">
+                        <div class="exp-meta">
+                            <span class="exp-period">Ene 2025 – Jul 2025</span>
+                            <span class="exp-org">Escuela Politécnica Nacional</span>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Instructor de Proyecto de Inclusión Digital (LudoLab)</h3>
+                            <p>
+                                Capacitación práctica en herramientas tecnológicas esenciales dirigida a grupos en situación de vulnerabilidad, facilitando el aprendizaje digital con paciencia, claridad y enfoque humano.
+                            </p>
+                            <button class="btn-text open-modal" data-modal="modal-ludolab">
+                                Ver alcance del proyecto <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Experiencia 3 -->
+                    <article class="exp-row reveal">
+                        <div class="exp-meta">
+                            <span class="exp-period">Sept 2024 – Ene 2025</span>
+                            <span class="exp-org">Escuela Politécnica Nacional</span>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Creación y Manejo de Bases de Datos</h3>
+                            <p>
+                                Estructuración lógica y física de bases de datos, implementación de consultas en SQL y optimización del almacenamiento para asegurar consultas rápidas y ordenadas.
+                            </p>
+                            <button class="btn-text open-modal" data-modal="modal-db">
+                                Ver detalles técnicos <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto IA -->
+                    <article class="exp-row reveal">
+                        <div class="exp-meta">
+                            <span class="exp-period">Proyecto Especializado</span>
+                            <span class="exp-org">Inteligencia Artificial</span>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Procesamiento Inteligente de Imágenes</h3>
+                            <p>
+                                Desarrollo y entrenamiento de un modelo de visión artificial capaz de identificar y clasificar objetos con precisión dentro de conjuntos complejos de imágenes.
+                            </p>
+                            <button class="btn-text open-modal" data-modal="modal-ia">
+                                Ver detalles del modelo <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FORMACIÓN Y CERTIFICACIONES -->
+        <section id="formacion" class="section section-alt">
+            <div class="container">
+                
+                <div class="section-header reveal">
+                    <div>
+                        <span class="kicker">Respaldo Académico</span>
+                        <h2 class="section-title">Formación y Certificaciones</h2>
+                    </div>
+                </div>
+
+                <div class="cards-grid-2">
+                    
+                    <!-- Educación e Idiomas -->
+                    <div class="clean-card reveal">
+                        <span class="card-kicker">Educación Formal</span>
+                        
+                        <div class="edu-item">
+                            <h3>Ingeniería en Ciencias de la Computación</h3>
+                            <p>Escuela Politécnica Nacional (EPN)</p>
+                        </div>
+
+                        <div class="edu-item">
+                            <h3>Bachiller en Ciencias</h3>
+                            <p>Colegio "San Francisco de Quito"</p>
+                        </div>
+
+                        <span class="card-kicker" style="margin-top: 2.25rem;">Idiomas</span>
+                        <div class="lang-row">
+                            <div class="lang-pill">
+                                <strong>Español</strong>
+                                <span>Nativo</span>
+                            </div>
+                            <div class="lang-pill">
+                                <strong>Inglés · Nivel B1</strong>
+                                <span>Intermedio (CEC EPN)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificaciones -->
+                    <div class="clean-card reveal">
+                        <span class="card-kicker">Certificaciones y Congresos</span>
+                        
+                        <ul class="clean-cert-list">
+                            <li>
+                                <strong>Fundamentos de Python 1</strong>
+                                <span>Cisco Networking Academy</span>
+                            </li>
+                            <li>
+                                <strong>Getting Started with Cisco Packet Tracer</strong>
+                                <span>Cisco Networking Academy</span>
+                            </li>
+                            <li>
+                                <strong>MATLAB Fundamentals & Onramp</strong>
+                                <span>MathWorks</span>
+                            </li>
+                            <li>
+                                <strong>Advanced Two (Inglés - Ciclo 4, 2024)</strong>
+                                <span>CEC Escuela Politécnica Nacional</span>
+                            </li>
+                            <li>
+                                <strong>Asistente ICI2ST 2022</strong>
+                                <span>III International Conference on Information Systems and Software Technologies (EPN)</span>
+                            </li>
+                            <li>
+                                <strong>Administración Efectiva del Tiempo</strong>
+                                <span>Formación Continua</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO Y REFERENCIAS -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <div class="contact-banner reveal">
+                    
+                    <div class="contact-info">
+                        <span class="kicker">Contacto Directo</span>
+                        <h2>¿Listo para conversar sobre tu proyecto o vacante?</h2>
+                        <p>
+                            Escríbeme directamente por WhatsApp con un mensaje listo para enviar o contáctame por correo electrónico. Respondo a la brevedad.
+                        </p>
+
+                        <div class="hero-cta">
+                            <a href="https://wa.me/593995593657?text=Hola%20Christian%2C%20revis%C3%A9%20tu%20portafolio%20profesional%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                            </a>
+                            <button type="button" id="btn-copy-email" class="btn btn-ghost">
+                                <i class="far fa-copy"></i> christianayala2828@hotmail.com
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="references-box">
+                        <h3>Referencias Profesionales</h3>
+                        
+                        <div class="ref-card">
+                            <strong>MSc. Jonathan Zea</strong>
+                            <span>Docente · Escuela Politécnica Nacional</span>
+                            <div class="ref-links">
+                                <a href="mailto:jonathan.zea@epn.edu.ec"><i class="far fa-envelope"></i> jonathan.zea@epn.edu.ec</a>
+                                <a href="tel:0999000683"><i class="fas fa-phone-alt"></i> 0999000683</a>
+                            </div>
+                        </div>
+
+                        <div class="ref-card">
+                            <strong>Luis Ayala</strong>
+                            <span>Propietario · CarAuto</span>
+                            <div class="ref-links">
+                                <a href="mailto:car_auto_mep@hotmail.com"><i class="far fa-envelope"></i> car_auto_mep@hotmail.com</a>
+                                <a href="tel:0983720871"><i class="fas fa-phone-alt"></i> 0983720871</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <div class="container footer-flex">
+            <span>© Christian Ayala · Quito, Ecuador</span>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/christian-ayala28" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://kurereishu.github.io/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:christianayala2828@hotmail.com">Correo</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <a href="#inicio" id="btn-top" title="Volver al inicio" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Notificación Toast -->
+    <div id="toast" role="status" aria-live="polite">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-msg">Copiado al portapapeles</span>
+    </div>
+
+    <!-- MODALES DE EXPERIENCIA -->
+    <div id="modal-carauto" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <span class="kicker">CarAuto · Feb 2025 – Actualidad</span>
+            <h3>Soporte y Gestión Digital</h3>
+            <ul>
+                <li>Supervisión diaria de la emisión y validación de comprobantes electrónicos.</li>
+                <li>Administración ordenada de la base de datos de clientes y control de inventario.</li>
+                <li>Resguardo de la integridad de los registros financieros y soporte técnico inmediato en ventas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-ludolab" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <span class="kicker">EPN · Ene 2025 – Jul 2025</span>
+            <h3>Instructor de Proyecto de Inclusión Digital (LudoLab)</h3>
+            <ul>
+                <li>Capacitación en herramientas digitales esenciales para grupos prioritarios y en situación de vulnerabilidad.</li>
+                <li>Enseñanza práctica y acompañamiento personalizado para reducir la brecha digital.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-db" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <span class="kicker">EPN · Sept 2024 – Ene 2025</span>
+            <h3>Creación y Manejo de Bases de Datos</h3>
+            <ul>
+                <li>Diseño y modelado lógico y físico de estructuras de datos.</li>
+                <li>Desarrollo de consultas SQL y optimización para garantizar rapidez y fiabilidad en el acceso a la información.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-ia" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <span class="kicker">Visión Artificial</span>
+            <h3>Procesamiento Inteligente de Imágenes</h3>
+            <ul>
+                <li>Entrenamiento de un modelo de segmentación semántica para identificar objetos con alta precisión.</li>
+                <li>Preparación, limpieza y optimización de conjuntos de datos visuales complejos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
